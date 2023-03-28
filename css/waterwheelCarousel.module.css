@@ -1,0 +1,27 @@
+.waterwheel-carousel-wrapper {
+    position: relative;
+}
+
+.waterwheel-carousel {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+}
+
+.waterwheel-carousel .item {
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.waterwheel-carousel .item:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.waterwheel-carousel .item.carousel-center:before {
+    display: none;
+}
